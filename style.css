@@ -1,0 +1,94 @@
+html {
+  width: 100%;
+  height: 100%;
+  /* background: rgb(201, 137, 183);
+  background: linear-gradient(
+    54deg,
+    rgba(201, 137, 183, 1) 12%,
+    rgba(57, 185, 154, 1) 56%,
+    rgba(229, 233, 48, 1) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+body {
+  font-size: 16px;
+  font-family: 'IBM Plex Mono', monospace;
+  margin: 100px;
+  background-color: #fcf6e3;
+  color: #222222;
+  /* background-color: white; */
+}
+
+a, a:visited {
+  color: #222222;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  /* show a hand cursor on hover; some argue that we
+  should keep the default arrow cursor for buttons */
+  cursor: pointer;
+}
+
+.title {
+  margin-bottom: 50px;
+  font-size: 75px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.article-list {
+  width: 70%;
+  max-width: 800px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.article-list-item {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.article-list-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.article-list-item__link {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.article-list-item__link:hover {
+  opacity: 0.7;
+}
+
+.save_btn,
+.article-list-item__remove-btn {
+  margin-left: 20px;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+  opacity: 0.7;
+  transition: background-color 0.3s;
+}
+
+.article-list-item__remove-btn:hover {
+  background-color:  rgba(237, 220, 164, 0.7);
+}
+
+.article-list-item__date {
+  margin-top: 5px;
+  font-size: 14px;
+  opacity: 0.7;
+  text-transform: uppercase;
+}

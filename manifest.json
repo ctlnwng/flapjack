@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Flapjack",
+  "description": "See your saved articles in a new tab",
+  "version": "0.1",
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "background": {
+    "scripts": ["scripts/background.js"],
+    "persistent": false
+  },
+  "icons": {
+    "16": "img/icon_16x16.png",
+    "48": "img/icon_48x48.png",
+    "128": "img/icon_128x128.png"
+  },
+  "permissions": ["storage", "tabs"],
+  "browser_action": {
+    "default_title": "Flapjack"
+  }
+}
